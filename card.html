@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HNG Profile Card</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- Root container -->
+    <article class="profile-card" data-testid="test-profile-card">
+      <header class="profile-header">
+        <h2 data-testid="test-user-name">Kelechi Ikediuwa</h2>
+      </header>
+
+      <figure class="avatar">
+        <img
+          src="pic1.png"
+          alt="Profile picture of Kelechi Ikediuwa"
+          data-testid="test-user-avatar"
+        />
+        <figcaption>Frontend Developer</figcaption>
+
+        <!-- Avatar upload -->
+        <label for="avatarUpload" class="upload-btn" tabindex="0">
+          Change Avatar
+        </label>
+        <input
+          type="file"
+          id="avatarUpload"
+          accept="image/*"
+          style="display: none"
+        />
+      </figure>
+
+      <main class="profile-info">
+        <p class="bio" data-testid="test-user-bio">
+          I’m a Frontend Developer passionate about creating seamless,
+          user-friendly web experiences. I combine modern development tools and
+          smart workflows to build efficient, responsive, and engaging
+          interfaces that bring ideas to life.
+        </p>
+
+        <p class="time">
+          Current Time (ms):
+          <button>
+            <span data-testid="test-user-time"></span>
+          </button>
+        </p>
+
+        <!-- Social Media Buttons -->
+        <nav aria-label="Social Media">
+          <ul class="social-links" data-testid="test-user-social-links">
+            <li>
+              <button
+                class="social-btn"
+                data-url="https://x.com/kcee_jones?t=ZfNDJHAheqOV9DeHdaNhEA&s=08 "
+                data-testid="test-user-social-twitter"
+              >
+                Twitter
+              </button>
+            </li>
+            <li>
+              <button
+                class="social-btn"
+                data-url="https://github.com/Kceejones06"
+                data-testid="test-user-social-github"
+              >
+                GitHub
+              </button>
+            </li>
+            <li>
+              <button
+                class="social-btn"
+                data-url="https://www.linkedin.com/in/kelly-ikediuwa-25272732a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                data-testid="test-user-social-linkedin"
+              >
+                LinkedIn
+              </button>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Hobbies -->
+        <section class="hobbies">
+          <h3>Hobbies</h3>
+          <ul data-testid="test-user-hobbies">
+            <li>Football</li>
+            <li>Coding</li>
+            <li>Music</li>
+            <li>Eating</li>
+          </ul>
+        </section>
+
+        <!-- Dislikes -->
+        <section class="dislikes">
+          <h3>Dislikes</h3>
+          <ul data-testid="test-user-dislikes">
+            <li>Procrastination</li>
+            <li>Low power supply</li>
+            <li>Jamming Bug</li>
+            <li>Poor Network</li>
+          </ul>
+        </section>
+      </main>
+    </article>
+    <script src="card.js"></script>
+  </body>
+</html>
